@@ -1,0 +1,316 @@
+{
+  "Appointments": [
+    {
+      "AppointmentID": "",
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 1
+    },
+    {
+      "AppointmentID": "",
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 2
+    },
+    {
+      "AppointmentID": "sws",
+      "AppointmentDate": "2023-03-18",
+      "AppointmentTime": "14:11",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "awdawd",
+      "id": 3
+    },
+    {
+      "AppointmentID": "",
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 4
+    },
+    {
+      "AppointmentID": "as",
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "awdawd",
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 10
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 11
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 12
+    },
+    {
+      "AppointmentDate": "",
+      "AppointmentTime": "",
+      "DoctorName": "",
+      "Department": "",
+      "PetOwnerName": "",
+      "id": 13
+    }
+  ],
+  "Departments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "Department Name": "",
+      "id": 3
+    },
+    {
+      "Department Name": "",
+      "id": 4
+    },
+    {
+      "Department Name": "",
+      "id": 5
+    }
+  ],
+  "Vets": [
+    {
+      "First Name": "",
+      "Last Name": "",
+      "Specialist": "",
+      "gender": "",
+      "Address": "",
+      "Postal Code": "",
+      "Phone": "",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 6
+    },
+    {
+      "First Name": "Sefin",
+      "Last Name": "sha",
+      "Specialist": "XSXsa",
+      "Address": "Pallimukku",
+      "Postal Code": "691011",
+      "Phone": "+917907163822",
+      "Avatar": "C:\\fakepath\\SEFINSHA_PROFILE.jpg",
+      "Short Biography": "ascdascfffffffffffffffffff",
+      "status": "option1",
+      "id": 7
+    },
+    {
+      "First Name": "",
+      "Last Name": "",
+      "Specialist": "",
+      "gender": "",
+      "Address": "",
+      "Postal Code": "",
+      "Phone": "",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 8
+    },
+    {
+      "First Name": "Sefin",
+      "Last Name": "sha",
+      "Specialist": "wrww4ew4wew",
+      "Address": "Pallimukku",
+      "Postal Code": "691011",
+      "Phone": "+917907163822",
+      "Avatar": "",
+      "Short Biography": "fwefwwwzzzzzzzzzzzzzzzzzzzzzzz",
+      "status": "option1",
+      "id": 9
+    },
+    {
+      "First Name": "Sefin",
+      "Last Name": "sha",
+      "Specialist": "",
+      "gender": "",
+      "Address": "Pallimukku",
+      "Postal Code": "691011",
+      "Phone": "+917907163822",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 10
+    },
+    {
+      "First Name": "",
+      "Last Name": "",
+      "Specialist": "",
+      "gender": "",
+      "Address": "",
+      "Postal Code": "",
+      "Phone": "",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 11
+    },
+    {
+      "First Name": "",
+      "Last Name": "",
+      "Specialist": "",
+      "gender": "",
+      "Address": "",
+      "Postal Code": "",
+      "Phone": "",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 12
+    },
+    {
+      "First Name": "",
+      "Last Name": "",
+      "Specialist": "",
+      "gender": "",
+      "Address": "",
+      "Postal Code": "",
+      "Phone": "",
+      "Avatar": "",
+      "Short Biography": "",
+      "status": "",
+      "id": 13
+    },
+    {
+      "First Name": "awdawdaw",
+      "Last Name": "dadawda",
+      "Specialist": "XSXsa",
+      "Address": "awdawda",
+      "Postal Code": "dawdawda",
+      "Phone": "dasdasda",
+      "Avatar": "",
+      "Short Biography": "awdawda",
+      "status": "",
+      "id": 14
+    },
+    {
+      "First Name": "awdawdaw",
+      "Last Name": "dadawda",
+      "Specialist": "XSXsa",
+      "Address": "awdawda",
+      "Postal Code": "dawdawda",
+      "Phone": "dasdasda",
+      "Avatar": "",
+      "Short Biography": "awdawda",
+      "status": "",
+      "id": 15
+    }
+  ],
+  "Pets": [
+    {
+      "id": 3
+    },
+    {
+      "Pets Owner FirstName": "",
+      "Pets Owner LastName": "",
+      "Pets OwnerEmail": "",
+      "Pets Name": "",
+      "PetsBreed": "",
+      "Pet Age": "",
+      "gender": "",
+      "Address": "",
+      "Phone": "",
+      "Biography": "",
+      "id": 4
+    }
+  ],
+  "Clinic": [
+    {
+      "id": 3
+    }
+  ],
+  "Schedule": [
+    {
+      "id": 7
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 8
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 9
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "awfawf",
+      "Department": "afsawsf",
+      "Message": "awfasfawfawsf",
+      "id": 10
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 11
+    },
+    {
+      "VetName": "",
+      "Available Days": "",
+      "AvailableTime": "",
+      "Department": "",
+      "Message": "",
+      "id": 12
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+       <form #UsersForm="ngForm" >
+        
+                <h4>Appointment</h4>
+
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">AppointmentID</label>
+                    <input type="text" id="disabledTextInput" class="form-control"  >
+                     
+                     
+                      
+
+                </div>
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">AppointmentDate</label>
+
+                    <input type="date" id="disabledTextInput" ngModel  name="AppointmentDate"
+                        class="form-control" min="2023-03-02" max="2023-03-31" > 
+                       
+                   
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">AppointmentTime</label>
+                    <input type="time" id="disabledTextInput" ngModel name="AppointmentTime" class="form-control" >
+                   
+
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">DoctorName</label>
+                    <select class="form-select" ngModel name="DoctorName" >
+                        <option  selected>--Select Doctor--</option>
+                        <option *ngFor = "let data of DataAppointments">{{data.DoctorName}}</option>
+                    </select> 
+                  
+
+
+
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Department</label>
+                    <select class="form-select" ngModel name="Department">
+                        <option  selected>--Select Department--</option>
+                         <option *ngFor="let data of DataAppointments">{{data.Department}} </option>
+                        </select> 
+                       
+                    
+                   
+                </div>
+                </div>
+                <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label">PetOwnerName</label>
+                    <input type="text" id="disabledTextInput" ngModel name="PetOwnerName" class="form-control" 
+                      >
+                      
+
+                </div>
+
+                 <button type="submit" class="btn btn-primary mb-3" (click)="postUserFormData(UsersForm.value)" >Create</button>    
+        </form>
+    
+</div> 
