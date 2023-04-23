@@ -7,9 +7,9 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { LoginComponent } from './shared/login/login.component';
 import { SignupComponent } from './shared/signup/signup.component';
 
-import { AllAppointmentsComponent } from './appointments/components/all-appointments/all-appointments.component';
+import { AllAppointmentsComponent } from './appointments/components/view-appointment/all-appointments.component';
 import { AddAppointmentComponent } from './appointments/components/add-appointment/add-appointment.component';
-import { DoctorsComponent } from './vets/components/doctors/doctors.component';
+import { DoctorsComponent } from './vets/components/ViewDoctor/doctors.component';
 import { AddDoctorComponent } from './vets/components/add-doctor/add-doctor.component';
 
 
@@ -26,9 +26,10 @@ import { AdminDashboardComponent } from './dashboard/components/admin-dashboard/
 import { AddScheduleComponent } from './schedule/components/add-schedule/add-schedule.component';
 import { ScheduleComponent } from './schedule/components/schedule/schedule.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppiontmentsModule } from './appointments/appiontments.module';
 import { ActivatedRoute } from '@angular/router';
+import { EditDoctorComponent } from './vets/components/edit-doctor/edit-doctor.component';
 
 
 @NgModule({
@@ -50,13 +51,15 @@ import { ActivatedRoute } from '@angular/router';
     HeaderComponent,
     AddClinicComponent,
     AddPetsComponent,
-    PetsComponent
+    PetsComponent,
+    EditDoctorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     AppiontmentsModule,FormsModule
+    ,ReactiveFormsModule
    
 
     

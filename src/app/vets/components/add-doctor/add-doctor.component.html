@@ -14,24 +14,26 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>First Name <span class="text-danger">*</span></label>
-                  <input class="form-control" type="text" ngModel name="First Name">
+                  <input class="form-control" type="text" formControlName="FirstName">
+                  <!-- <option *ngFor="let data of DataVets">{{data.FirstName}}</option> -->
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Last Name</label>
-                  <input class="form-control" type="text" ngModel name="Last Name" />
+                  <input class="form-control" type="text" formControlName="LastName" />
+                  <!-- <option *ngFor="let data of DataVets">{{data.LastName}}</option> -->
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Specialist <span class="text-danger">*</span></label>
-                 
-                 
-                  <select class="form-select" ngModel name="Specialist" >
-                    <option  selected>--Specialist--</option>
-                    <option *ngFor = "let data of DataVets">{{data.Specialist}}</option>
-                </select> 
+
+
+                  <select class="form-select" formControlName="Specialist">
+                    <option selected>--Specialist--</option>
+                    <option *ngFor="let data of DataVets">{{data.Specialist}}</option>
+                  </select>
 
                 </div>
               </div>
@@ -40,12 +42,14 @@
                   <label class="gen-label">Gender:</label>
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                      <input ngModel name="Male" type="radio" name="gender" class="form-check-input" />Male
+                      <input formControlName="Male" type="radio" name="gender" class="form-check-input" />Male
+                      <!-- <option *ngFor="let data of DataVets">{{data.Male}}</option> -->
                     </label>
                   </div>
                   <div class="form-check-inline">
                     <label class="form-check-label">
-                      <input ngModel name="Female" type="radio" name="gender" class="form-check-input" />Female
+                      <input formControlName="Female" type="radio" name="gender" class="form-check-input" />Female
+                      <!-- <option *ngFor="let data of DataVets">{{data.Female}}</option> -->
                     </label>
                   </div>
                 </div>
@@ -55,13 +59,15 @@
                   <div class="col-sm-12">
                     <div class="form-group">
                       <label>Address</label>
-                      <input type="text" class="form-control" ngModel name="Address" />
+                      <input type="text" class="form-control" formControlName="Address" />
+                      <!-- <option *ngFor="let data of DataVets">{{data.Address}}</option> -->
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6 col-lg-3">
                     <div class="form-group">
                       <label>Postal Code</label>
-                      <input type="number" class="form-control" ngModel name="Postal Code" />
+                      <input type="number" class="form-control" formControlName="PostalCode" />
+                      <!-- <option *ngFor="let data of DataVets">{{data.PostalCode}}</option> -->
                     </div>
                   </div>
                 </div>
@@ -69,7 +75,8 @@
               <div class="col-sm-6">
                 <div class="form-group">
                   <label>Phone </label>
-                  <input class="form-control" type="text" ngModel name="Phone" />
+                  <input class="form-control" type="text" formControlName="Phone" />
+                  <!-- <option *ngFor="let data of DataVets">{{data.Phone}}</option> -->
                 </div>
               </div>
               <div class="col-sm-6">
@@ -80,7 +87,8 @@
                       <img alt="" src="assets/img/user.jpg" />
                     </div>
                     <div class="upload-input">
-                      <input type="file" class="form-control" ngModel name="Avatar" />
+                      <input type="file" class="form-control" formControlName="Avatar" />
+                      <!-- <option *ngFor="let data of DataVets">{{data.Avatar}}</option> -->
                     </div>
                   </div>
                 </div>
@@ -88,21 +96,26 @@
             </div>
             <div class="form-group">
               <label>Short Biography</label>
-              <textarea class="form-control" ngModel name="Short Biography" rows="3" cols="30"></textarea>
+              <textarea class="form-control" formControlName="ShortBiography" rows="3" cols="30"></textarea>
+              <!-- <option *ngFor="let data of DataVets">{{data.ShortBiography}}</option> -->
             </div>
             <div class="form-group">
               <label class="display-block">Status</label>
               <div class="form-check form-check-inline">
-                <input ngModel name="Status" class="form-check-input" type="radio" name="status" id="doctor_active"
+                <input formControlName="Status" class="form-check-input" type="radio" name="status" id="doctor_active"
                   value="option1" checked />
+                <!-- <option *ngFor="let data of DataVets">{{data.Status}}</option> -->
                 <label class="form-check-label" for="doctor_active">
                   Active
                 </label>
               </div>
               <div class="form-check form-check-inline">
-                <input ngModel name=" Active" class="form-check-input" type="radio" name="status" id="doctor_inactive"
-                  value="option2" />
+                <input formControlName=" Active" class="form-check-input" type="radio" name="status"
+                  id="doctor_inactive" value="option2" />
+                <!-- <option *ngFor="let data of DataVets">{{data.Active}}</option> -->
                 <label class="form-check-label" for="doctor_inactive">
+
+
                   Inactive
                 </label>
               </div>

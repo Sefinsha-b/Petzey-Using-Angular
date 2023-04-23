@@ -17,4 +17,15 @@ export class AddVetService {
   GetVetsData(){
     return this.http.get(this.Url+"/Vets");
   }
+
+
+
+  // FOR EDIT METHOD
+  GetPutapiVet(id:any){
+    return this.http.get(`${this.Url + '/Vets'}/${id}`);
+    }
+    PutApiVet(id:any ,data:any){
+    return this.http.put(`${this.Url + '/Vets'}/${id}`,data);
+    }
+    
 }
