@@ -9,45 +9,45 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./edit-doctor.component.css']
 })
 export class EditDoctorComponent implements OnInit {
-  editForm = new FormGroup({
-    FirstName: new FormControl("")
+  addVetsForm = new FormGroup({
+    Name: new FormControl(""),
+    Speciality: new FormControl(""),
+    Address: new FormControl("")
+
+
   })
-  AddVetService: any;
-  doctors: any;
-  DAta: any;
+  EditVets:any;
 
   ngOnInit(): void {
-    this.updateVetsData();
-
+this.FetchVetsData();
   }
-
-  constructor(private Edit: AddVetService, private router: ActivatedRoute) { }
+  constructor(private VetCons: AddVetService, private router: ActivatedRoute) { }
   get add() {
-    return this.editForm.controls;
-  }
-  fetchGEtData() {
-    return this.Edit.GetVetsData().subscribe((resp) => {
-      this.DAta = resp;
-    })
+    return this.addVetsForm.controls;
   }
 
-  updateVetsData() {
-    return this.Edit.GetPutapiVet(this.router.snapshot.params['id']).subscribe((resp: any) => {
-      this.editForm = new FormGroup({
-        FirstName: new FormControl(resp['FirstName'])
+  // Fetchting Vets using getMethod
+  FetchVetsData() {
+    return this.VetCons.GetPutVet(this.router.snapshot.params['id']).subscribe((resp: any) => {
+      this.addVetsForm = new FormGroup({
+        Name: new FormControl(resp['Name']),
+        Speciality: new FormControl(resp['Speciality']),
+        Address: new FormControl(resp['Address'])
       })
     })
   }
+
+
+
+  // Function for Put MEthod
   update() {
-    return this.Edit.PutApiVet(this.router.snapshot.params['id'],
-      this.editForm.value).subscribe((resp) => {
-        console.log(resp);
-        alert("Update Successfully...!");
-        window.location.reload();
-      });
+    this.VetCons.PutVet(this.router.snapshot.params['id'], this.addVetsForm.value).subscribe((resp: any) => {
+      console.log(resp);
+      alert("update successfully..!");
+      // window.location.reload();
+    })
   }
 }
-
 
 
 

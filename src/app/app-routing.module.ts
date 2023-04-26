@@ -36,6 +36,7 @@ const routes: Routes = [
 
   { path: 'vets', component: DoctorsComponent },
   { path: 'addVets', component: AddDoctorComponent },
+  { path: 'Editvets/:id', component:EditDoctorComponent},
 
   { path: 'pets', component: PetsComponent },
   { path: 'addPets', component: AddPetsComponent },
@@ -52,7 +53,6 @@ const routes: Routes = [
   { path: 'addClinic', component: AddClinicComponent },
   { path: 'Edit', component: EditAppointmentComponent },
 
-  { path: 'Editvet', component: EditDoctorComponent }
 
 
 

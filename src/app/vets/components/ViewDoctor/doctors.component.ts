@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AddVetService } from '../../services/add-vet.service';
 
 @Component({
   selector: 'app-doctors',
@@ -6,10 +7,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./doctors.component.css']
 })
 export class DoctorsComponent implements OnInit {
+  ViewVets: any;
 
-  constructor() { }
+  constructor(private ConsView:AddVetService){}
 
   ngOnInit(): void {
+  this.GetViewVet();
   }
+GetViewVet(){
+  this.ConsView.GetVetApi().subscribe((resp)=>{
+    this.ViewVets=resp;
+  })
+}
+
+deletevet(data:any){
+  this.ConsView.deleteData(data.id).subscribe((resp) =>{
+    alert("Data Deleted Successfully")
+    window.location.reload();
+  })
+}
 
 }

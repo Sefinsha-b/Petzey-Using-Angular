@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, NgForm } from '@angular/forms';
 import { AddVetService } from '../../services/add-vet.service';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-doctor',
@@ -8,22 +8,40 @@ import { AddVetService } from '../../services/add-vet.service';
   styleUrls: ['./add-doctor.component.css']
 })
 export class AddDoctorComponent implements OnInit {
-  DataVets:any;
- 
-  constructor(private VetsData:AddVetService) { }
+  addVetsForm = new FormGroup({
+    Name: new FormControl(""),
+    Speciality: new FormControl(""),
+    Address: new FormControl("")
+    
+    
+  })
 
+  AppForm: any;
+  AppData: any;
   ngOnInit(): void {
-    this.fetchVetsData();
+    this.GetData();
   }
-PostVetsFormData(data:NgForm){
-   this.VetsData.postVetsData(data).subscribe((resp) =>{
-    console.log(resp);
-  });
-}
-fetchVetsData(){
-  return this.VetsData.GetVetsData().subscribe((resp: any) => {
- this.DataVets = resp;
- })
-}
+
+  constructor(private ConsAdd: AddVetService) { }
+  get add() {
+    return this.addVetsForm.controls;
+  }
+
+  Submit() {
+    return this.ConsAdd.PostVetApi(this.addVetsForm.value).subscribe((resp: any) => {
+      this.AppForm = resp;
+      console.log(resp);
+      alert("Succesfully Added");
+    })
+  }
+
+  GetData() {
+    return this.ConsAdd.GetVetApi().subscribe((resp: any) => {
+      this.AppData = resp;
+      console.log(resp);
+    }
+
+    )
+  }
 
 }

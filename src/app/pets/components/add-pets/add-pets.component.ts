@@ -8,26 +8,26 @@ import { AddPetsService } from '../../services/add-pets.service';
 })
 export class AddPetsComponent implements OnInit {
   petsAppointments: any;
-
-  constructor(private petsAddForm:AddPetsService) { }
+  PetsForm: any;
+  constructor(private petsAddForm: AddPetsService) { }
 
   ngOnInit(): void {
-    this.fetchAppointmentsData();
+    this.fetchVetsData();
   }
 
 
-  postpetsFormData(data :any) {
+  postpetsFormData(data: any) {
     console.warn(data);
-    this.petsAddForm.PostPetsData(data).subscribe((result)=>{
-    
-    })
-    }
+     this.petsAddForm.PostPetsData(data).subscribe((result) => {
 
-    fetchAppointmentsData(){
-      return this.petsAddForm.GetPetsData().subscribe((resp: any) => {
-     this.petsAppointments = resp;
-     })
-   }
+    })
+  }
+
+  fetchVetsData() {
+    return this.petsAddForm.GetPetsData().subscribe((resp: any) => {
+      this.petsAppointments = resp;
+    })
+  }
 
 
 }
